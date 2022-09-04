@@ -20,22 +20,21 @@ class NeatGenomeMixer: GenomeMixer {
         guard g1 != g2 else { return g1 }
         let nodesSet = Set<Node>(g1.nodes + g2.nodes)
         let nodes = Array(nodesSet).sorted()
-        let connectionsSet = Set<Connection>()
         let allConnections = Set<Connection>(g1.connections + g2.connections)
-        var dictionary = [String: Connection?]()
+        var inheritedConnectionsDictionary = [String: Connection?]()
         allConnections.forEach { connection in
-            dictionary[connection.key()] = parentPreferenceProvider.preferFirst ? g1.connections.firstConnection(from: connection.inputNode, to: connection.outputNode) :
-            g2.connections.firstConnection(from: connection.inputNode, to: connection.outputNode)
+            inheritedConnectionsDictionary[connection.key()] = parentPreferenceProvider.preferFirst ? g1.connections.firstConnection(from: connection.inputNode, to: connection.outputNode) :
+                g2.connections.firstConnection(from: connection.inputNode, to: connection.outputNode)
         }
         
-        let connections = dictionary.compactMap { (key: String, value: Connection?) in
+        let inheritedConnections = inheritedConnectionsDictionary.compactMap { (key: String, value: Connection?) in
             value
         }.sorted()
         
         return Genome(
             id: idProvider.next,
             nodes: nodes,
-            connections: connections)
+            connections: inheritedConnections)
     }
     
     init(idProvider: IdProvider, parentPreferenceProvider: ParentPreferenceProvider) {
@@ -45,7 +44,7 @@ class NeatGenomeMixer: GenomeMixer {
 }
 
 extension Connection {
-    func key() -> String {
+    fileprivate func key() -> String {
         func stringFromOptionalInt(_ int: Int?) -> String {
             guard let int = int else { return "nil" }
             return String(int)
