@@ -16,6 +16,8 @@
 		5334249D28C4B41100634F1D /* NeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249C28C4B41100634F1D /* NeatTests.swift */; };
 		533424A128C4E9A300634F1D /* GenomeMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533424A028C4E9A300634F1D /* GenomeMixer.swift */; };
 		533424A328C4E9CA00634F1D /* ParentPreferenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */; };
+		5382D6F928C519DA001F79CA /* ActivationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5382D6F828C519DA001F79CA /* ActivationFunctions.swift */; };
+		5382D6FB28C526B6001F79CA /* ActivationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5382D6FA28C526B6001F79CA /* ActivationTests.swift */; };
 		53EE3AD728C3618200391F7E /* ArtificialLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */; };
 		53EE3AD928C3618200391F7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD828C3618200391F7E /* ContentView.swift */; };
 		53EE3ADB28C3618200391F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3ADA28C3618200391F7E /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		5334249C28C4B41100634F1D /* NeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatTests.swift; sourceTree = "<group>"; };
 		533424A028C4E9A300634F1D /* GenomeMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomeMixer.swift; sourceTree = "<group>"; };
 		533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPreferenceProvider.swift; sourceTree = "<group>"; };
+		5382D6F828C519DA001F79CA /* ActivationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunctions.swift; sourceTree = "<group>"; };
+		5382D6FA28C526B6001F79CA /* ActivationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationTests.swift; sourceTree = "<group>"; };
 		53EE3AD328C3618200391F7E /* ArtificialLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtificialLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificialLifeApp.swift; sourceTree = "<group>"; };
 		53EE3AD828C3618200391F7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				5334249028C4A2E900634F1D /* Node.swift */,
 				5334249228C4A31000634F1D /* Connection.swift */,
 				5334249428C4A7D100634F1D /* Genome.swift */,
+				5382D6F828C519DA001F79CA /* ActivationFunctions.swift */,
 			);
 			path = "Genome models";
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			children = (
 				5334249A28C4B27800634F1D /* SequentialIdProviderTests.swift */,
 				5334249C28C4B41100634F1D /* NeatTests.swift */,
+				5382D6FA28C526B6001F79CA /* ActivationTests.swift */,
 			);
 			path = ArtificialLifeTests;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5334249128C4A2E900634F1D /* Node.swift in Sources */,
+				5382D6F928C519DA001F79CA /* ActivationFunctions.swift in Sources */,
 				5334249728C4ABFB00634F1D /* NeatGenomeMixer.swift in Sources */,
 				53EE3AD928C3618200391F7E /* ContentView.swift in Sources */,
 				5334249528C4A7D100634F1D /* Genome.swift in Sources */,
@@ -265,6 +272,7 @@
 			files = (
 				5334249B28C4B27800634F1D /* SequentialIdProviderTests.swift in Sources */,
 				5334249D28C4B41100634F1D /* NeatTests.swift in Sources */,
+				5382D6FB28C526B6001F79CA /* ActivationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
