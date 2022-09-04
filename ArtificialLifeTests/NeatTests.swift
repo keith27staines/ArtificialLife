@@ -42,6 +42,13 @@ final class NeatTests: XCTestCase {
         let child = sut.mix(genomes.0, genomes.1)
         XCTAssertEqual(child.connections[0], genomes.1.connections[0])
     }
+    
+    func test_neat_withTwoAndThreeNodeParents() {
+        let genomes = makeTrivialTwoAndThreeNodeGenomes(idProvider: idProvider)
+        let sut = makeSUT()
+        let child = sut.mix(genomes.0, genomes.1)
+        XCTAssertEqual(child.nodes.count, 3)
+    }
 
 }
 
@@ -85,6 +92,17 @@ extension NeatTests {
             isEnabled: true)
         return makeGenome(
             idProvider.next, [sensorNode, outputNode], [connection])
+    }
+    
+    func makeTrivialTwoAndThreeNodeGenomes(idProvider: IdProvider) -> (Genome,Genome) {
+        let g1 = makeTrivialGenome(idProvider: idProvider)
+        var nodes = g1.nodes
+        nodes.append(Node(id: idProvider.next, bias: 0))
+        let g2 = Genome(
+            id: idProvider.next,
+            nodes: nodes,
+            connections: g1.connections)
+        return (g1,g2)
     }
     
     func makeGenome(_ id: Int, _ nodes: [Node], _ connections: [Connection]) -> Genome {
