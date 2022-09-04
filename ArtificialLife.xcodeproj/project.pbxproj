@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5334249128C4A2E900634F1D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249028C4A2E900634F1D /* Node.swift */; };
+		5334249328C4A31000634F1D /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249228C4A31000634F1D /* Connection.swift */; };
+		5334249528C4A7D100634F1D /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249428C4A7D100634F1D /* Genome.swift */; };
+		5334249728C4ABFB00634F1D /* NeatGenomeMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249628C4ABFB00634F1D /* NeatGenomeMixer.swift */; };
+		5334249928C4B0BA00634F1D /* IdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249828C4B0BA00634F1D /* IdProvider.swift */; };
+		5334249B28C4B27800634F1D /* SequentialIdProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249A28C4B27800634F1D /* SequentialIdProviderTests.swift */; };
+		5334249D28C4B41100634F1D /* NeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334249C28C4B41100634F1D /* NeatTests.swift */; };
+		533424A128C4E9A300634F1D /* GenomeMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533424A028C4E9A300634F1D /* GenomeMixer.swift */; };
+		533424A328C4E9CA00634F1D /* ParentPreferenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */; };
 		53EE3AD728C3618200391F7E /* ArtificialLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */; };
 		53EE3AD928C3618200391F7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD828C3618200391F7E /* ContentView.swift */; };
 		53EE3ADB28C3618200391F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3ADA28C3618200391F7E /* Assets.xcassets */; };
 		53EE3ADF28C3618200391F7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3ADE28C3618200391F7E /* Preview Assets.xcassets */; };
-		53EE3AE928C3618300391F7E /* ArtificialLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AE828C3618300391F7E /* ArtificialLifeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5334249028C4A2E900634F1D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		5334249228C4A31000634F1D /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		5334249428C4A7D100634F1D /* Genome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
+		5334249628C4ABFB00634F1D /* NeatGenomeMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatGenomeMixer.swift; sourceTree = "<group>"; };
+		5334249828C4B0BA00634F1D /* IdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdProvider.swift; sourceTree = "<group>"; };
+		5334249A28C4B27800634F1D /* SequentialIdProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialIdProviderTests.swift; sourceTree = "<group>"; };
+		5334249C28C4B41100634F1D /* NeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatTests.swift; sourceTree = "<group>"; };
+		533424A028C4E9A300634F1D /* GenomeMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomeMixer.swift; sourceTree = "<group>"; };
+		533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPreferenceProvider.swift; sourceTree = "<group>"; };
 		53EE3AD328C3618200391F7E /* ArtificialLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtificialLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificialLifeApp.swift; sourceTree = "<group>"; };
 		53EE3AD828C3618200391F7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,7 +49,6 @@
 		53EE3ADC28C3618200391F7E /* ArtificialLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArtificialLife.entitlements; sourceTree = "<group>"; };
 		53EE3ADE28C3618200391F7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53EE3AE428C3618300391F7E /* ArtificialLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtificialLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53EE3AE828C3618300391F7E /* ArtificialLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificialLifeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5334248F28C4A2CD00634F1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5334249E28C4BFA600634F1D /* Genome models */,
+				5334249F28C4E97300634F1D /* Genome mixing */,
+				5334249828C4B0BA00634F1D /* IdProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5334249E28C4BFA600634F1D /* Genome models */ = {
+			isa = PBXGroup;
+			children = (
+				5334249028C4A2E900634F1D /* Node.swift */,
+				5334249228C4A31000634F1D /* Connection.swift */,
+				5334249428C4A7D100634F1D /* Genome.swift */,
+			);
+			path = "Genome models";
+			sourceTree = "<group>";
+		};
+		5334249F28C4E97300634F1D /* Genome mixing */ = {
+			isa = PBXGroup;
+			children = (
+				5334249628C4ABFB00634F1D /* NeatGenomeMixer.swift */,
+				533424A028C4E9A300634F1D /* GenomeMixer.swift */,
+				533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */,
+			);
+			path = "Genome mixing";
+			sourceTree = "<group>";
+		};
 		53EE3ACA28C3618200391F7E = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +120,7 @@
 		53EE3AD528C3618200391F7E /* ArtificialLife */ = {
 			isa = PBXGroup;
 			children = (
+				5334248F28C4A2CD00634F1D /* Models */,
 				53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */,
 				53EE3AD828C3618200391F7E /* ContentView.swift */,
 				53EE3ADA28C3618200391F7E /* Assets.xcassets */,
@@ -94,7 +141,8 @@
 		53EE3AE728C3618300391F7E /* ArtificialLifeTests */ = {
 			isa = PBXGroup;
 			children = (
-				53EE3AE828C3618300391F7E /* ArtificialLifeTests.swift */,
+				5334249A28C4B27800634F1D /* SequentialIdProviderTests.swift */,
+				5334249C28C4B41100634F1D /* NeatTests.swift */,
 			);
 			path = ArtificialLifeTests;
 			sourceTree = "<group>";
@@ -199,8 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5334249128C4A2E900634F1D /* Node.swift in Sources */,
+				5334249728C4ABFB00634F1D /* NeatGenomeMixer.swift in Sources */,
 				53EE3AD928C3618200391F7E /* ContentView.swift in Sources */,
+				5334249528C4A7D100634F1D /* Genome.swift in Sources */,
+				533424A128C4E9A300634F1D /* GenomeMixer.swift in Sources */,
 				53EE3AD728C3618200391F7E /* ArtificialLifeApp.swift in Sources */,
+				533424A328C4E9CA00634F1D /* ParentPreferenceProvider.swift in Sources */,
+				5334249328C4A31000634F1D /* Connection.swift in Sources */,
+				5334249928C4B0BA00634F1D /* IdProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53EE3AE928C3618300391F7E /* ArtificialLifeTests.swift in Sources */,
+				5334249B28C4B27800634F1D /* SequentialIdProviderTests.swift in Sources */,
+				5334249D28C4B41100634F1D /* NeatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
