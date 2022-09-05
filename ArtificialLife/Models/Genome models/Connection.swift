@@ -12,7 +12,7 @@ struct Connection: Identifiable {
     let inputNode: Int?
     let outputNode: Int?
     let weight: Float
-    let isEnabled: Bool
+    var isEnabled: Bool
 }
 
 extension Connection: Hashable {}
