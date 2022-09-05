@@ -12,7 +12,6 @@ final class NeatTests: XCTestCase {
     
     let idProvider = SequentialIdProvider()
     
-    
     func test_neat_withIdenticalTrivialGenomes() {
         let g = makeTrivialGenome(idProvider: idProvider)
         let sut = makeSUT()
@@ -82,8 +81,8 @@ extension NeatTests {
     }
     
     func makeTrivialGenome(idProvider: IdProvider) -> Genome {
-        let sensorNode = Node(id: idProvider.next, bias: 0)
-        let outputNode = Node(id: idProvider.next, bias: 0)
+        let sensorNode = Node(id: idProvider.next)
+        let outputNode = Node(id: idProvider.next)
         let connection = Connection(
             id: idProvider.next,
             inputNode: sensorNode.id,
@@ -97,7 +96,7 @@ extension NeatTests {
     func makeTrivialTwoAndThreeNodeGenomes(idProvider: IdProvider) -> (Genome,Genome) {
         let g1 = makeTrivialGenome(idProvider: idProvider)
         var nodes = g1.nodes
-        nodes.append(Node(id: idProvider.next, bias: 0))
+        nodes.append(Node(id: idProvider.next))
         let g2 = Genome(
             id: idProvider.next,
             nodes: nodes,

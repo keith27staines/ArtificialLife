@@ -7,7 +7,6 @@
 
 struct Node: Identifiable, Hashable {
     let id: Int
-    let bias: Float
 }
 
 extension Node: Comparable {

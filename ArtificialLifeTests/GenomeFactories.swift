@@ -8,9 +8,11 @@
 import XCTest
 @testable import ArtificialLife
 
-func makeTrivialGenome(idProvider: IdProvider, connectionWeight: Float = 0) -> Genome {
-    let inputNode = Node(id: idProvider.next, bias: 0)
-    let outputNode = Node(id: idProvider.next, bias: 0)
+func makeTrivialGenome(
+    idProvider: IdProvider,
+    connectionWeight: Float = 0) -> Genome {
+    let inputNode = Node(id: idProvider.next)
+    let outputNode = Node(id: idProvider.next)
     let connection = Connection(
         id: idProvider.next,
         inputNode: inputNode.id,

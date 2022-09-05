@@ -18,7 +18,7 @@
 		533424A328C4E9CA00634F1D /* ParentPreferenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */; };
 		5382D6F928C519DA001F79CA /* ActivationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5382D6F828C519DA001F79CA /* ActivationFunctions.swift */; };
 		5382D6FB28C526B6001F79CA /* ActivationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5382D6FA28C526B6001F79CA /* ActivationTests.swift */; };
-		53A8C9BF28C59D15003839ED /* NodeInsertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8C9BE28C59D15003839ED /* NodeInsertionTests.swift */; };
+		53A8C9BF28C59D15003839ED /* GenomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8C9BE28C59D15003839ED /* GenomeTests.swift */; };
 		53A8C9C128C59FA9003839ED /* GenomeFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8C9C028C59FA9003839ED /* GenomeFactories.swift */; };
 		53EE3AD728C3618200391F7E /* ArtificialLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */; };
 		53EE3AD928C3618200391F7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3AD828C3618200391F7E /* ContentView.swift */; };
@@ -48,7 +48,7 @@
 		533424A228C4E9CA00634F1D /* ParentPreferenceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPreferenceProvider.swift; sourceTree = "<group>"; };
 		5382D6F828C519DA001F79CA /* ActivationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunctions.swift; sourceTree = "<group>"; };
 		5382D6FA28C526B6001F79CA /* ActivationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationTests.swift; sourceTree = "<group>"; };
-		53A8C9BE28C59D15003839ED /* NodeInsertionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeInsertionTests.swift; sourceTree = "<group>"; };
+		53A8C9BE28C59D15003839ED /* GenomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomeTests.swift; sourceTree = "<group>"; };
 		53A8C9C028C59FA9003839ED /* GenomeFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomeFactories.swift; sourceTree = "<group>"; };
 		53EE3AD328C3618200391F7E /* ArtificialLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtificialLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EE3AD628C3618200391F7E /* ArtificialLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificialLifeApp.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				5334249A28C4B27800634F1D /* SequentialIdProviderTests.swift */,
 				5334249C28C4B41100634F1D /* NeatTests.swift */,
 				5382D6FA28C526B6001F79CA /* ActivationTests.swift */,
-				53A8C9BE28C59D15003839ED /* NodeInsertionTests.swift */,
+				53A8C9BE28C59D15003839ED /* GenomeTests.swift */,
 				53A8C9C028C59FA9003839ED /* GenomeFactories.swift */,
 			);
 			path = ArtificialLifeTests;
@@ -279,7 +279,7 @@
 				5334249B28C4B27800634F1D /* SequentialIdProviderTests.swift in Sources */,
 				5334249D28C4B41100634F1D /* NeatTests.swift in Sources */,
 				5382D6FB28C526B6001F79CA /* ActivationTests.swift in Sources */,
-				53A8C9BF28C59D15003839ED /* NodeInsertionTests.swift in Sources */,
+				53A8C9BF28C59D15003839ED /* GenomeTests.swift in Sources */,
 				53A8C9C128C59FA9003839ED /* GenomeFactories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

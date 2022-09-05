@@ -1,5 +1,5 @@
 //
-//  NodeInsertionTests.swift
+//  GenomeTests.swift
 //  ArtificialLifeTests
 //
 //  Created by Keith Staines on 05/09/2022.
@@ -8,12 +8,12 @@
 import XCTest
 @testable import ArtificialLife
 
-final class NodeInsertionTests: XCTestCase {
+final class GenomeTests: XCTestCase {
     let idProvider = SequentialIdProvider()
     
-    func test_node_insertion() {
+    func test_mutateByNodeInsertion() {
         let genome = makeTrivialGenome(idProvider: idProvider, connectionWeight: 0.4)
-        let newGenome = genome.insertingNode(existingConnectionIndex: 0, idProvider: idProvider)
+        let newGenome = genome.mutateByNodeInsertion(existingConnectionIndex: 0, idProvider: idProvider)
         XCTAssertTrue(newGenome.id > genome.id)
         XCTAssertEqual(newGenome.nodes.count, 3)
         XCTAssertEqual(newGenome.connections.count, 3)
@@ -27,9 +27,9 @@ final class NodeInsertionTests: XCTestCase {
 
 extension Genome {
     
-    func insertingNode(existingConnectionIndex: Int, idProvider: IdProvider) -> Genome {
+    func mutateByNodeInsertion(existingConnectionIndex: Int, idProvider: IdProvider) -> Genome {
         let existingConnection = connections[existingConnectionIndex]
-        let newNode = Node(id: idProvider.next, bias: 0)
+        let newNode = Node(id: idProvider.next)
         let inputSideConnection = Connection(
             id: idProvider.next,
             inputNode: existingConnection.inputNode,
